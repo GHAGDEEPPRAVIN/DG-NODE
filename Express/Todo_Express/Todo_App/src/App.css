@@ -1,0 +1,36 @@
+body {
+  margin: 100px auto;
+  height: auto;
+  width: 50%;
+  /* margin: auto; */
+}
+
+.todo_head {
+  width: 100%;
+}
+.todo_head {
+  text-align: center;
+}
+.todo_head tr {
+  width: 100%;
+}
+.todo_head td {
+  width: 100%;
+}
+.todo_head td input {
+  width: 90%;
+  border-radius: 5px;
+  /* height: 30px; */
+  padding: 10px 20px;
+}
+.todo_head td button {
+  width: 150px;
+  border-radius: 5px;
+  /* height: 35px; */
+  padding: 10px 20px;
+  background-color: blue;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 17px;
+}
