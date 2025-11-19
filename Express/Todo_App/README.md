@@ -73,7 +73,7 @@ TODO_APP/ <br>
 
 <h3>🖼️ Screenshots</h3>
 
-<img src="">
+<img src="secreeshot.png">
 
 <h2>🔮 Future Enhancements</h2>
 
@@ -84,3 +84,7 @@ TODO_APP/ <br>
 🎚️ Add filters (Completed / Pending)
 
 📱 Make UI fully responsive
+
+<h1>Demo Video</h1>
+
+Watch Demo Video (https://drive.google.com/file/d/1PCPt5Ivf7tXnt9FUFkLAKQfFnp-IWWew/view?usp=sharing)
