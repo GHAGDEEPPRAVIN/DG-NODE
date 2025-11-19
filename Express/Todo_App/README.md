@@ -1,11 +1,10 @@
-📝 Todo App — Full-Stack (React + Express + Redux Toolkit)
+<h1>📝 Todo App — Full-Stack (React + Express + Redux Toolkit)</h1>
 
 A fully functional Todo Management Application built using ⚛️ React, 🟩 Express.js, and 🟣 Redux Toolkit.
 This project demonstrates modern full-stack development with clean folder structure, API integration, and complete CRUD functionality.
 
-✨ Features
-🎨 Frontend (React + Redux Toolkit)
-
+<h2>✨ Features</h2>
+<h3>🎨 Frontend (React + Redux Toolkit)</h3>
 ➕ Add Todo
 
 📝 Edit Todo
@@ -18,7 +17,8 @@ This project demonstrates modern full-stack development with clean folder struct
 
 📦 Modular and clean React components
 
-🚀 Backend (Express.js API)
+
+<h3>🚀 Backend (Express.js API)</h3>
 
 📡 REST API endpoints
 
@@ -26,29 +26,32 @@ This project demonstrates modern full-stack development with clean folder struct
 
 🗂 JSON-based todo storage
 
-🧩 Easy to expand with DB in future
+<br>
 
-📁 Project Structure
-TODO_APP/
-│
-├── server.js                    # 🚀 Express backend server
-│
-├── src/
-│   ├── features/
-│   │   └── todoSlice.js         # 🧠 Redux Toolkit slice for todos
-│   │
-│   ├── components/
-│   │   └── Todo.jsx             # 🖥️ Todo UI component
-│   │
-│   ├── App.jsx                  # Main app wrapper
-│   ├── main.jsx                 # React entry file
-│   └── index.css                # Global stylesheet
-│
-├── package.json
-└── README.md
+<h2>🧩 Easy to expand with DB in future 
+</h2><br>
+TODO_APP/ <br>
+│<br>
+├── server.js                   # 🚀 Express backend server<br>
+│<br>
+├── src/ <br>
+│   ├── features/<br>
+│   │   └── todoSlice.js         # 🧠 Redux Toolkit slice (state management)<br>
+│   │<br>
+│   ├── components/<br>
+│   │   └── Todo.jsx             # 🖥️ Todo UI component<br>
+│   │<br>
+│   ├── App.jsx                  # 🧩 Main App component<br>
+│   ├── main.jsx                 # ⚛️ React DOM entry point<br>
+│   └── index.css                # 🎨 Global styling<br>
+│<br>
+├── package.json                 # 📦 Project dependencies & scripts<br>
+└── README.md                    # 📘 Project documentation<br>
 
-🛠️ Tech Stack
-Frontend
+
+<h2>🛠️ Tech Stack</h2>
+
+<h3>Frontend</h3>
 
 ⚛️ React
 
@@ -58,9 +61,9 @@ Frontend
 
 ⚡ Vite (optional)
 
-Backend
+<h3>Backend</h3>
 
-🟩 Node.js
+<h2>🟩 Node.js</h2>
 
 🚀 Express.js
 
@@ -68,79 +71,11 @@ Backend
 
 📡 REST API
 
-⚙️ Installation & Setup
-1️⃣ Clone the Repository
-git clone https://github.com/your-username/TODO_APP.git
-cd TODO_APP
+<h3>🖼️ Screenshots</h3>
 
-2️⃣ Install Frontend Dependencies
-npm install
-npm run dev
+<img src="">
 
-3️⃣ Install Backend Dependencies
-npm install express cors
-node server.js
-
-🌐 API Documentation
-
-Below is the complete API used by the frontend:
-
-📌 GET — Fetch all todos
-GET /todos
-
-
-Response Example:
-
-[
-  {
-    "id": 1,
-    "title": "Learn React",
-    "completed": false
-  }
-]
-
-📌 POST — Add a new todo
-POST /todos
-
-
-Body Example:
-
-{
-  "title": "New Task"
-}
-
-📌 PUT — Update a todo
-PUT /todos/:id
-
-
-Body Example:
-
-{
-  "title": "Updated Todo",
-  "completed": true
-}
-
-📌 DELETE — Delete a todo
-DELETE /todos/:id
-
-🧩 Frontend Logic Explanation
-🧠 src/features/todoSlice.js
-
-Contains reducers & actions: addTodo, deleteTodo, toggleTodo, etc.
-
-Uses Redux Toolkit’s createSlice
-
-🖥️ src/components/Todo.jsx
-
-Renders todos from store
-
-Dispatches actions
-
-Communicates with Express backend via fetch/axios
-
-🖼️ Screenshots (Add Yours Here)
-
-🔮 Future Enhancements
+<h2>🔮 Future Enhancements</h2>
 
 🔐 Add user authentication
 
