@@ -1,90 +1,136 @@
 <h1>📝 Todo App — Full-Stack (React + Express + Redux Toolkit)</h1>
 
-A fully functional Todo Management Application built using ⚛️ React, 🟩 Express.js, and 🟣 Redux Toolkit.
-This project demonstrates modern full-stack development with clean folder structure, API integration, and complete CRUD functionality.
+A fully functional <strong>Todo Management Application</strong> built with <strong>React</strong>, <strong>Redux Toolkit</strong>, and <strong>Express.js</strong>.  
+This project follows modern full-stack patterns, clean folder structure, and includes full CRUD functionality.
+
+<hr>
 
 <h2>✨ Features</h2>
+
 <h3>🎨 Frontend (React + Redux Toolkit)</h3>
-➕ Add Todo
-
-📝 Edit Todo
-
-❌ Delete Todo
-
-✔️ Mark as Completed
-
-🔄 Live UI updates with Redux Toolkit
-
-📦 Modular and clean React components
-
+➕ Add Todo  
+📝 Edit Todo  
+❌ Delete Todo  
+✔️ Mark as Completed  
+🔄 Live UI updates with Redux Toolkit  
+📦 Modular and clean React components  
 
 <h3>🚀 Backend (Express.js API)</h3>
+📡 REST API endpoints  
+🌐 CORS enabled  
+🗂 JSON-based todo storage  
 
-📡 REST API endpoints
+<hr>
 
-🌐 CORS enabled
+<h2>🧩 Project Structure</h2>
 
-🗂 JSON-based todo storage
+<pre>
+TODO_APP/
+│
+├── server.js                   # 🚀 Express backend server
+│
+├── src/
+│   ├── features/
+│   │   └── todoSlice.js        # 🧠 Redux Toolkit slice (state management)
+│   │
+│   ├── components/
+│   │   └── Todo.jsx            # 🖥️ Todo UI component
+│   │
+│   ├── App.jsx                 # 🧩 Main App component
+│   ├── main.jsx                # ⚛️ React DOM entry point
+│   └── index.css               # 🎨 Global styling
+│
+├── package.json                # 📦 Project dependencies & scripts
+└── README.md                   # 📘 Project documentation
+</pre>
 
-<br>
-
-<h2>🧩 Easy to expand with DB in future 
-</h2><br>
-TODO_APP/ <br>
-│<br>
-├── server.js                   # 🚀 Express backend server<br>
-│<br>
-├── src/ <br>
-│   ├── features/<br>
-│   │   └── todoSlice.js         # 🧠 Redux Toolkit slice (state management)<br>
-│   │<br>
-│   ├── components/<br>
-│   │   └── Todo.jsx             # 🖥️ Todo UI component<br>
-│   │<br>
-│   ├── App.jsx                  # 🧩 Main App component<br>
-│   ├── main.jsx                 # ⚛️ React DOM entry point<br>
-│   └── index.css                # 🎨 Global styling<br>
-│<br>
-├── package.json                 # 📦 Project dependencies & scripts<br>
-└── README.md                    # 📘 Project documentation<br>
-
+<hr>
 
 <h2>🛠️ Tech Stack</h2>
 
 <h3>Frontend</h3>
-
-⚛️ React
-
-🟣 Redux Toolkit
-
-🎨 CSS / Tailwind
-
-⚡ Vite (optional)
+⚛️ React  
+🟣 Redux Toolkit  
+🎨 CSS / Tailwind  
+⚡ Vite (optional)  
 
 <h3>Backend</h3>
+🟩 Node.js  
+🚀 Express.js  
+🔒 CORS  
+📡 REST API  
 
-<h2>🟩 Node.js</h2>
+<hr>
 
-🚀 Express.js
+<h2>🚀 Quick Start</h2>
 
-🔒 CORS
+<h3>1️⃣ Clone Repository</h3>
 
-📡 REST API
+```bash
+git clone <https://github.com/GHAGDEEPPRAVIN/DG-NODE.git>
+cd Express
+cd TODO_APP
+```
 
-<h3>🖼️ Screenshots</h3>
+<h3>2️⃣ Install Dependencies</h3>
+
+```bash
+npm install
+```
+
+If frontend is in a separate folder:
+
+```bash
+cd client
+npm install
+```
+
+<h3>3️⃣ Start Backend</h3>
+
+```bash
+node server.js
+```
+
+<h3>4️⃣ Start Frontend</h3>
+
+```bash
+npm run dev
+```
+
+<hr>
+
+<h2>🔌 API Endpoints</h2>
+
+<b>GET</b> /todos — List all todos  
+<b>GET</b> /todos/:id — Get todo by ID  
+<b>POST</b> /todos — Create todo  
+<b>PUT</b> /todos/:id — Update todo  
+<b>DELETE</b> /todos/:id — Delete todo  
+
+<hr>
+
+<h2>🖼️ Screenshots</h2>
 
 <img src="secreeshot.png">
 
+<hr>
+
 <h2>🔮 Future Enhancements</h2>
 
-🔐 Add user authentication
+🔐 Add user authentication  
+🗄️ Connect backend to MongoDB  
+🎚️ Add todo filters (Completed / Pending / Priority)  
+📱 Make UI fully responsive  
 
-🗄️ Connect backend to MongoDB
+<hr>
 
-🎚️ Add filters (Completed / Pending)
+<h2>🎬 Demo Video</h2>
 
-📱 Make UI fully responsive
+Watch the demo:  
+https://drive.google.com/file/d/1PCPt5Ivf7tXnt9FUFkLAKQfFnp-IWWew/view?usp=sharing
 
-<h1>Demo Video</h1>
+<hr>
 
-Watch Demo Video (https://drive.google.com/file/d/1PCPt5Ivf7tXnt9FUFkLAKQfFnp-IWWew/view?usp=sharing)
+<h2>📜 License</h2>
+This project is open-source. Feel free to fork and modify.
+
