@@ -23,7 +23,21 @@ const Tweets = () => {
   }, [dispatch]);
 
   const handleAdd = useCallback(async () => {
-    if (!tweet.trim() || !username.trim()) return;
+    if (!tweet.trim() || !username.trim()) {
+      alert("Username and tweet cannot be empty.");
+      return;
+    }
+
+    if (username.trim().length < 5) {
+      alert("Username must be at least 5 characters long!");
+        return;
+    }
+
+    if (tweet.trim().length < 5) {
+      alert("Tweet must be at least 5 characters long!");
+        return;
+    }
+
 
     const res = await fetch(url, {
       method: "POST",
@@ -102,16 +116,16 @@ const Tweets = () => {
           <tbody>
             {tweets.map((t) => (
               <tr key={t.id}>
-               
+
                 <td className="tweetUsername">
                   {t.username}
                   {t.isEdit && <span className="editedBadge"> • Edited</span>}
                 </td>
 
-               
+
                 <td className="tweetMsg">{t.tweet}</td>
 
-                
+
                 <td className="editDeleteTd">
                   <span className="tweetTime">{t.createdAt}</span>
 
