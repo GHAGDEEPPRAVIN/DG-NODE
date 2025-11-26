@@ -184,7 +184,7 @@ function parseRawInput(rawInput) {
 
 Put a short demo video (30–90s) in `/demo/demo-video.mp4` and link it here:
 
-**Demo:** [https://drive.google.com/file/d/1n4LssA2TEvzIzDSHTC5HNjX0QHeJLZGm/view?usp=sharing]
+**Demo:** [https://drive.google.com/file/d/1inj0XSFx9PgZvSePK-upi9USVOnGcqh8/view?usp=sharing]
 
 Tips for the demo video:
 
