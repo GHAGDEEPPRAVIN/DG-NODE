@@ -134,13 +134,3 @@ https://drive.google.com/file/d/1PCPt5Ivf7tXnt9FUFkLAKQfFnp-IWWew/view?usp=shari
 This project is open-source. Feel free to fork and modify.
 
 <hr>
-
-<h2>🙋‍♂️ Need Help?</h2>
-
-I can also add:  
-🚀 Modern ES Module server  
-🗄️ MongoDB integration  
-🐳 Docker setup  
-📘 API documentation  
-
-Just tell me!
