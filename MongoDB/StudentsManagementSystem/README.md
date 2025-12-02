@@ -1,16 +1,62 @@
-# React + Vite
+# 📚 Student Management System (Backend Only)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and efficient **Student Management System** built using **Node.js**, **Express**, and **Mongoose**.  
+This project focuses on **server-side functionality** and **MongoDB database operations** without any frontend.  
+It demonstrates CRUD operations, schema validation, routing, and clean backend architecture.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## React Compiler
+- 🟢 **Node.js** — Runtime Environment  
+- ⚡ **Express.js** — Web Framework  
+- 🍃 **MongoDB** — NoSQL Database  
+- 🧩 **Mongoose** — ODM for MongoDB  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🆕 Add new student  
+- 📄 View all students   
+- ✏️ Update student details  
+- ❌ Delete a student  
+- 🗂️ Proper schema validation using Mongoose  
+- 🔗 REST API architecture  
+
+---
+
+## 📁 Project Structure
+
+<pre>
+StudentsManagementSystem/
+│
+├─ package.json                      → Project dependencies & scripts
+│
+└─ src/
+   │
+   ├─ server.js                      → Main entry point (starts the server)
+   │
+   ├─ config/
+   │   └── db.js                     → MongoDB connection setup
+   │
+   ├─ models/
+   │   └── Book.model.js             → Mongoose schema & model for students
+   │
+   ├─ controllers/
+   │   └── Book.controller.js        → Logical code: add, update, get, delete students
+   │
+   ├─ routes/
+   │   └── Book.routes.js            → API routes for students
+   │
+   └─ middleware/
+       └── logger.js                 → Custom middleware
+
+</pre>
+
+---
+
+## Demo Video 
+
+watch (https://drive.google.com/file/d/11eAHdpvI4__Dcw2V-PSc4TBilksKAjoB/view?usp=sharing)
+
