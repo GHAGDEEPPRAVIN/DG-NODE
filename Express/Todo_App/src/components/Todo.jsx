@@ -6,16 +6,11 @@ const API_URL = "http://localhost:1000/api/todos";
 
 const Todo = () => {
   const [title, setTitle] = useState("");
-  const [editId, setEditId] = useState(null); // TRACK EDIT MODE
+  const [editId, setEditId] = useState(null); 
   const todos = useSelector((state) => state.todo);
   const dispatch = useDispatch();
 
-  // Save to localStorage
-  useEffect(() => {
-    localStorage.setItem("redux-todo", JSON.stringify(todos));
-  }, [todos]);
 
-  // Load todos from server
   useEffect(() => {
     const loadTodos = async () => {
       const res = await fetch(API_URL);
@@ -54,14 +49,14 @@ const Todo = () => {
 
     dispatch(updateTodo({ id: editId, title: updatedTodo.title }));
 
-    // Reset to add mode
+    
     setEditId(null);
     setTitle("");
   };
 
-  // When clicking edit button
+  // after edit btn clicked then the input is automatically filled with the todo title
   const startEdit = (todo) => {
-    setTitle(todo.title); // auto-fill input
+    setTitle(todo.title); // automatically filled input
     setEditId(todo.id);   // mark edit mode
   };
 
@@ -81,7 +76,7 @@ const Todo = () => {
           onChange={(e) => setTitle(e.target.value)}
         />
 
-        {/* CHANGE BUTTON BASED ON editId */}
+        
         {editId ? (
           <button onClick={handleUpdate} style={{ background: "#f39c12" }}>
             Update
