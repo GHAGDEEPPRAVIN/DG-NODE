@@ -1,0 +1,26 @@
+.navbar
+{
+    border-top: 2px solid red;
+}
+.navbar nav
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar nav .navBtn 
+{
+    color: white;
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    padding: 20px 60px;
+    font-size: 16px;
+}
+
+.navbar nav .navBtn span
+{
+    font-size: 16px;
+    margin-right: 5px;
+    font-size: 700;
+}   
