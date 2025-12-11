@@ -1,8 +1,7 @@
-<h1 align="center">🎬 Movie Management System — MERN + HTML/CSS</h1>
+# 🎬 Movie Management System — MERN + HTML/CSS
 
-<p align="center">
-  A complete <b>Movie CRUD Application</b> built using <b>MERN Stack</b> + <b>HTML/CSS</b>.  
-  Manage your movies with ease — Add ➕ | Edit ✏️ | Update 🔄 | Delete ❌ | View 👀  
+<p>
+  The Movie Management System 🎬 is a full-stack web application built using the MERN stack along with HTML and CSS, designed to efficiently manage movie records through complete CRUD (Create, Read, Update, Delete) operations.
 </p>
 
 ---
@@ -107,8 +106,5 @@
 ## 🎬 Demo Video
 
 📌 Add demo video link here
-🎥 Demo Video: Click to Watch(https://drive.google.com/file/d/1_ScnodWgthrJ-lhJJPIuVmixQLgQVOko/view?usp=sharing)
+🎥 Demo Video:(https://drive.google.com/file/d/1_ScnodWgthrJ-lhJJPIuVmixQLgQVOko/view?usp=sharing)
 
-
-
-<h3 align="center">📽️ Built with ❤️ by Ghag Deep Pravin</h3>

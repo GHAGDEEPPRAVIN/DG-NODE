@@ -1,62 +1,110 @@
-# 📚 Student Management System (Backend Only)
+# 🎬 Movie Management System — MERN + HTML/CSS
 
-A simple and efficient **Student Management System** built using **Node.js**, **Express**, and **Mongoose**.  
-This project focuses on **server-side functionality** and **MongoDB database operations** without any frontend.  
-It demonstrates CRUD operations, schema validation, routing, and clean backend architecture.
-
----
-
-## 🚀 Tech Stack
-
-- 🟢 **Node.js** — Runtime Environment  
-- ⚡ **Express.js** — Web Framework  
-- 🍃 **MongoDB** — NoSQL Database  
-- 🧩 **Mongoose** — ODM for MongoDB  
+<p>
+  The Movie Management System 🎬 is a full-stack web application built using the MERN stack along with HTML and CSS, designed to efficiently manage movie records through complete CRUD (Create, Read, Update, Delete) operations.
+</p>
 
 ---
 
-## ✨ Features
+## 🚀 Tech Stack Used
 
-- 🆕 Add new student  
-- 📄 View all students   
-- ✏️ Update student details  
-- ❌ Delete a student  
-- 🗂️ Proper schema validation using Mongoose  
-- 🔗 REST API architecture  
+### 🎨 Frontend
+- 🧱 **HTML**
+- 🎨 **CSS**
+- ⚛️ **React.js**
+
+### 🛠 Backend
+- 🟩 **Node.js**
+- 🚂 **Express.js**
+- 🍃 **MongoDB**
+- 🧬 **Mongoose**
 
 ---
 
-## 📁 Project Structure
+## 🎥 Project Features
+
+### 🔧 CRUD Functionalities
+- ➕ **Create** a new movie entry  
+- 📄 **Read** and display the list of movies  
+- ✏️ **Update** movie details easily  
+- ❌ **Delete** unwanted movies  
+
+### ⭐ Additional Features
+- 🎭 Movie poster support  
+- 🕵️‍♂️ Movie search functionality  
+- 📱 Responsive UI using HTML + CSS + React  
+- ⚙️ Backend API built with Express.js  
+- 🛢 Fully connected with MongoDB using Mongoose  
+
+---
+
+## 📁 Folder Structure
 
 <pre>
-StudentsManagementSystem/
+<pre>
+
+🎬 MovieManagementSystem/
 │
-├─ package.json                      → Project dependencies & scripts
-│
-└─ src/
-   │
-   ├─ server.js                      → Main entry point (starts the server)
-   │
-   ├─ config/
-   │   └── db.js                     → MongoDB connection setup
-   │
-   ├─ models/
-   │   └── Book.model.js             → Mongoose schema & model for students
-   │
-   ├─ controllers/
-   │   └── Book.controller.js        → Logical code: add, update, get, delete students
-   │
-   ├─ routes/
-   │   └── Book.routes.js            → API routes for students
-   │
-   └─ middleware/
-       └── logger.js                 → Custom middleware
+└── src/
+    │
+    ├── backend/                                     # 🛠️ Backend (Node + Express + MongoDB)
+    │   │
+    │   ├── server.js                                # 🚀 Main Server File
+    │   │
+    │   ├── config/                                  # ⚙️ Configurations
+    │   │   ├── db.js                                # 🔌 MongoDB Connection
+    │   │   └── multer.js                            # 🖼️ Multer Upload Setup
+    │   │
+    │   ├── controllers/                             # 🧠 Controllers
+    │   │   └── movie_Controllers.js                 # 🎬 Movie CRUD Controller
+    │   │
+    │   ├── middleware/                              # 🛡 Middleware
+    │   │   └── logger.js                            # 📜 Request Logger
+    │   │
+    │   ├── models/                                  # 🧬 Mongoose Models
+    │   │   └── movie_Modal.js                       # 🎞️ Movie Schema
+    │   │
+    │   ├── routes/                                  # 🌐 API Routes
+    │   │   └── movie_Routes.js                      # 🎯 Movie Endpoints
+    │   │
+    │   └── uploads/                                 # 📁 Uploaded Images Folder
+    │
+    │
+    └── frontend/                                    # 🎨 Frontend (React + HTML + CSS)
+        │
+        ├── components/                              # 🧩 Reusable Components
+        │   ├── Home/                                # 🏠 Home Component
+        │   │   ├── Home.jsx
+        │   │   └── Home.css
+        │   │
+        │   ├── Navbar/                              # 🔝 Navigation Bar
+        │   │   ├── Navbar.jsx
+        │   │   └── Navbar.css
+        │
+        ├── features/                                # ⚙️ Feature Modules
+        │   ├── AddMovie/                            # ➕ Add Movie
+        │   │   ├── AddMovie.jsx
+        │   │   └── AddMovie.css
+        │   │
+        │   └── EditMovie/                           # ✏️ Edit Movie
+        │       ├── EditMovie.jsx
+        │       └── EditMovie.css
+        │
+        ├── routes/                                  # 🌐 Frontend Routes
+        │   └── Routes.jsx
+        │
+        ├── App.jsx                                  # ⚛️ Main App File
+        └── index.js                                 # 🔰 React Entry Point
+</pre>
 
 </pre>
 
----
+## Screenshots
 
-## Demo Video 
+<img src="movieMS_Demo.png">
 
-watch (https://drive.google.com/file/d/11eAHdpvI4__Dcw2V-PSc4TBilksKAjoB/view?usp=sharing)
+## 🎬 Demo Video
+
+📌 Add demo video link here
+🎥 Demo Video:(https://drive.google.com/file/d/1_ScnodWgthrJ-lhJJPIuVmixQLgQVOko/view?usp=sharing)
 
