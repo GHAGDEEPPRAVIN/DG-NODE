@@ -1,110 +1,112 @@
-# 🎬 Movie Management System — MERN + HTML/CSS
+# 📦 Express + MongoDB Product Filter API
 
-<p>
-  The Movie Management System 🎬 is a full-stack web application built using the MERN stack along with HTML and CSS, designed to efficiently manage movie records through complete CRUD (Create, Read, Update, Delete) operations.
-</p>
-
----
-
-## 🚀 Tech Stack Used
-
-### 🎨 Frontend
-- 🧱 **HTML**
-- 🎨 **CSS**
-- ⚛️ **React.js**
-
-### 🛠 Backend
-- 🟩 **Node.js**
-- 🚂 **Express.js**
-- 🍃 **MongoDB**
-- 🧬 **Mongoose**
+A complete backend API built using **Express.js**, **MongoDB**, and **Mongoose**, focusing on **real-world filtering, searching, sorting & pagination**.  
+This project is created as a **practical task** for students to learn API development and Postman testing.
 
 ---
 
-## 🎥 Project Features
+## 🎯 Project Overview
 
-### 🔧 CRUD Functionalities
-- ➕ **Create** a new movie entry  
-- 📄 **Read** and display the list of movies  
-- ✏️ **Update** movie details easily  
-- ❌ **Delete** unwanted movies  
+This API allows performing advanced operations on a **Product Collection**, including:
 
-### ⭐ Additional Features
-- 🎭 Movie poster support  
-- 🕵️‍♂️ Movie search functionality  
-- 📱 Responsive UI using HTML + CSS + React  
-- ⚙️ Backend API built with Express.js  
-- 🛢 Fully connected with MongoDB using Mongoose  
+- Fetching all products  
+- Searching by name / brand  
+- Filtering by category, price range & rating  
+- Sorting products  
+- Pagination support  
+- Bonus: Multi-filtering in a single API  
+
+It includes **error handling**, **clean folder structure**, and complete **Postman testing**.
+
+---
+
+## 🧩 Tech Stack
+
+- ⚡ Node.js  
+- 🚀 Express.js  
+- 🍃 MongoDB  
+- 🧵 Mongoose  
+- 🧪 Postman  
 
 ---
 
 ## 📁 Folder Structure
 
 <pre>
-<pre>
+backend/
+│── config/
+│   └── db.js                # MongoDB Connection
 
-🎬 MovieManagementSystem/
-│
-└── src/
-    │
-    ├── backend/                                     # 🛠️ Backend (Node + Express + MongoDB)
-    │   │
-    │   ├── server.js                                # 🚀 Main Server File
-    │   │
-    │   ├── config/                                  # ⚙️ Configurations
-    │   │   ├── db.js                                # 🔌 MongoDB Connection
-    │   │   └── multer.js                            # 🖼️ Multer Upload Setup
-    │   │
-    │   ├── controllers/                             # 🧠 Controllers
-    │   │   └── movie_Controllers.js                 # 🎬 Movie CRUD Controller
-    │   │
-    │   ├── middleware/                              # 🛡 Middleware
-    │   │   └── logger.js                            # 📜 Request Logger
-    │   │
-    │   ├── models/                                  # 🧬 Mongoose Models
-    │   │   └── movie_Modal.js                       # 🎞️ Movie Schema
-    │   │
-    │   ├── routes/                                  # 🌐 API Routes
-    │   │   └── movie_Routes.js                      # 🎯 Movie Endpoints
-    │   │
-    │   └── uploads/                                 # 📁 Uploaded Images Folder
-    │
-    │
-    └── frontend/                                    # 🎨 Frontend (React + HTML + CSS)
-        │
-        ├── components/                              # 🧩 Reusable Components
-        │   ├── Home/                                # 🏠 Home Component
-        │   │   ├── Home.jsx
-        │   │   └── Home.css
-        │   │
-        │   ├── Navbar/                              # 🔝 Navigation Bar
-        │   │   ├── Navbar.jsx
-        │   │   └── Navbar.css
-        │
-        ├── features/                                # ⚙️ Feature Modules
-        │   ├── AddMovie/                            # ➕ Add Movie
-        │   │   ├── AddMovie.jsx
-        │   │   └── AddMovie.css
-        │   │
-        │   └── EditMovie/                           # ✏️ Edit Movie
-        │       ├── EditMovie.jsx
-        │       └── EditMovie.css
-        │
-        ├── routes/                                  # 🌐 Frontend Routes
-        │   └── Routes.jsx
-        │
-        ├── App.jsx                                  # ⚛️ Main App File
-        └── index.js                                 # 🔰 React Entry Point
-</pre>
+│── models/
+│   └── Product.model.js     # Product Schema
+
+│── controllers/
+│   └── productController.js # Business Logic
+
+│── routes/
+│   └── productRoutes.js     # All API Routes
+
+└── server.js                # App Entry File
 
 </pre>
 
-## Screenshots
+## 📦 Product API Features (GET Routes)
 
-<img src="movieMS_Demo.png">
+1️⃣ Fetch all products  
+```http
+GET /products
 
-## 🎬 Demo Video
+```
+2️⃣ Fetch product by ID
+```http
+GET /products/:id
+```
+3️⃣ Search by productName (case insensitive)
+```http
+GET /products/search?name=mobile
+```
+4️⃣ Search by brand
+```http
+GET /products/brand?brand=apple
+```
+5️⃣ Search by multiple fields (name + category + brand)
+```http
+GET /products/multi-search?name=phone&category=electronics&brand=samsung
+```
+6️⃣ Filter by category
+```http
+GET /products/category?category=laptop
+```
+7️⃣ Price range filter
+```http
+GET /products/price?min=1000&max=5000
+```
+8️⃣ Filter by rating
+```http
+GET /products/rating?minRating=4
+```
+9️⃣ Sorting by price (asc/desc)
+```http
+GET /products/sort?order=asc
+GET /products/sort?order=desc
+```
+🔟 Pagination
+```http
+GET /products/pagination?page=1&limit=10
+```
 
-📌 Add demo video link here
-🎥 Demo Video:(https://drive.google.com/file/d/1_ScnodWgthrJ-lhJJPIuVmixQLgQVOko/view?usp=sharing)
+## 📘 Pagination Explanation
 
+### Pagination divides large datasets into smaller parts.
+
+- Example (100 products, limit = 10):
+- Page 1 → items 1–10
+- Page 2 → items 11–20
+- Page 3 → items 21–30
+
+
+
+## 📹 Demo – Postman API Testing (Video)
+
+👉 Add your demo video link here:
+https://drive.google.com/file/d/19TtZDmKNYOG7_wJ1kb2Ml_U7bcYyPTYp/view?usp=sharing
