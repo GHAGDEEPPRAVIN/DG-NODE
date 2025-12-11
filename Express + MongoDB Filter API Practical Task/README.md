@@ -52,50 +52,52 @@ backend/
 
 ## 📦 Product API Features (GET Routes)
 
-### 1️⃣ Fetch all products  
+1️⃣ Fetch all products  
 ```http
 GET /products
 
-### 2️⃣ Fetch product by ID
+```
+2️⃣ Fetch product by ID
 ```http
 GET /products/:id
-
-### 3️⃣ Search by productName (case insensitive)
+```
+3️⃣ Search by productName (case insensitive)
 ```http
 GET /products/search?name=mobile
-
-### 4️⃣ Search by brand
+```
+4️⃣ Search by brand
 ```http
 GET /products/brand?brand=apple
-
-### 5️⃣ Search by multiple fields (name + category + brand)
+```
+5️⃣ Search by multiple fields (name + category + brand)
 ```http
 GET /products/multi-search?name=phone&category=electronics&brand=samsung
-
-### 6️⃣ Filter by category
+```
+6️⃣ Filter by category
 ```http
 GET /products/category?category=laptop
-
-### 7️⃣ Price range filter
+```
+7️⃣ Price range filter
 ```http
 GET /products/price?min=1000&max=5000
-
-### 8️⃣ Filter by rating
+```
+8️⃣ Filter by rating
 ```http
 GET /products/rating?minRating=4
-
-### 9️⃣ Sorting by price (asc/desc)
+```
+9️⃣ Sorting by price (asc/desc)
 ```http
 GET /products/sort?order=asc
 GET /products/sort?order=desc
-
-### 🔟 Pagination
+```
+🔟 Pagination
 ```http
 GET /products/pagination?page=1&limit=10
+```
 
-### 📘 Pagination Explanation
+## 📘 Pagination Explanation
 
-- Pagination divides large datasets into smaller parts.
+### Pagination divides large datasets into smaller parts.
 
 - Example (100 products, limit = 10):
 - Page 1 → items 1–10
