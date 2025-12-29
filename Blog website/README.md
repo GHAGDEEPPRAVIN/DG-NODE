@@ -68,3 +68,9 @@ blog-website/
 │   └── server.js                  # Backend entry point
 │
 └── README.md
+
+```
+
+## Demo Video (Testing in Postman)
+
+watch video (https://drive.google.com/file/d/1Ix-CbRTHdEhdpcaLuTWk3uZOCwnLhKjl/view?usp=sharing)
