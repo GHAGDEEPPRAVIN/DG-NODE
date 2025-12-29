@@ -46,7 +46,6 @@ A full-stack **Blog Website** built using the **MERN Stack** that allows users t
 ## 📂 Project Structure
 
 ```bash
-<pre>
 
 blog-website/
 │
@@ -69,6 +68,3 @@ blog-website/
 │   └── server.js                  # Backend entry point
 │
 └── README.md
-
-
-</pre>
