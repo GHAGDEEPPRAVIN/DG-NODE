@@ -118,7 +118,7 @@ blog-website/
 
 ## ScreenShot
 
-<img src="blogWebsiteImage.png">
+<img src="./public/video/blogWebsiteImage.png">
 
 ## Demo Video 
 
