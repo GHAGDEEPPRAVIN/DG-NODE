@@ -1,6 +1,6 @@
 # 📝 Blog Website (MERN Stack)
 
-A full-stack **Blog Website** built using the **MERN Stack** that allows users to create, read, update, and delete blog posts with secure authentication, image uploads, and cookie-based sessions.
+A full-stack **Blog Website** built using the **MERN Stack** that allows users to **create, read, update, and delete blog posts** with **secure authentication**, **image uploads**, and **cookie-based sessions**.
 
 ---
 
@@ -10,27 +10,47 @@ A full-stack **Blog Website** built using the **MERN Stack** that allows users t
 - User **Sign Up & Sign In**
 - Password encryption using **bcrypt**
 - Secure **cookie-based authentication**
+- HTTP-only cookies
 - Protected routes for authenticated users
+- Persistent login across page refresh
+
+---
 
 ### 📰 Blog Management (CRUD)
 - ✍️ Create new blog posts
-- 📖 Read all blogs & single blog details
+- 📖 View all blogs
+- 🔍 View single blog details
 - ✏️ Update existing blog posts
 - 🗑️ Delete blog posts (authorized users only)
 
+---
+
 ### 🖼️ Image Upload
 - Upload blog cover images
-- Image storage handled via server (e.g., Multer / Cloud storage)
-- Preview images before publishing
+- Image handling via **Multer**
+- Stored on server
+- Image preview before publishing
 
-### 🍪 Cookies & Security
-- Cookies set during **Sign In**
-- HTTP-only cookies for better security
-- Session persistence across refresh
+---
+
+### 🎨 Frontend UI
+- Responsive UI built with **React**
+- Separate pages for:
+  - Home (Blog List & CRUD UI)
+  - Sign In
+  - Sign Up
+- Clean component-based structure
+- API integration with backend
+- Cookies handled automatically during authentication
 
 ---
 
 ## 🛠️ Tech Stack
+
+### Frontend
+- React.js
+- CSS
+- React Router DOM
 
 ### Backend
 - Node.js
@@ -38,7 +58,7 @@ A full-stack **Blog Website** built using the **MERN Stack** that allows users t
 - MongoDB
 - Mongoose
 - bcrypt
-- Multer (for image upload)
+- Multer
 - Cookie-Parser
 
 ---
@@ -46,31 +66,60 @@ A full-stack **Blog Website** built using the **MERN Stack** that allows users t
 ## 📂 Project Structure
 
 ```bash
-
 blog-website/
 │
-├── backend/                   # Backend (Node + Express)
+├── src/
 │   │
-│   ├── controllers/
-│   │   └── blogControllers.js     # Blog CRUD logic (Create, Read, Update, Delete)
+│   ├── backend/                     # Backend (Node + Express)
+│   │   │
+│   │   ├── controllers/
+│   │   │   └── blogControllers.js      # Blog CRUD logic
+│   │   │
+│   │   ├── models/
+│   │   │   └── blogModel.js            # Blog schema
+│   │   │
+│   │   ├── routes/
+│   │   │   └── blogRoutes.js           # Blog API routes
+│   │   │
+│   │   ├── middlewares/
+│   │   │   └── authMiddleware.js       # Authentication & token check
+│   │   │
+│   │   ├── uploads/                   # Uploaded blog images
+│   │   │
+│   │   ├── app.js                     # Express app configuration
+│   │   └── server.js                  # Server entry point
 │   │
-│   ├── model/
-│   │   └── blogModel.js           # Mongoose schema for Blog
-│   │
-│   ├── routes/
-│   │   └── blogRoutes.js          # Blog API routes
-│   │
-│   ├── middlewares/
-│   │   └── blogMiddleware.js      # Auth check, token verification
-│   │
-│   ├── uploads/                   # Uploaded blog images
-│   │
-│   └── server.js                  # Backend entry point
+│   └── frontend/                      # Frontend (React)
+│       │
+│       ├── components/
+│       │   │
+│       │   ├── Home/
+│       │   │   ├── Home.jsx            # Blog CRUD UI
+│       │   │   └── Home.css
+│       │   │
+│       │   ├── SignIn/
+│       │   │   ├── SignIn.jsx          # Sign In page
+│       │   │   └── SignIn.css
+│       │   │
+│       │   └── SignUp/
+│       │       ├── SignUp.jsx          # Sign Up page
+│       │       └── SignUp.css
+│       │
+│       ├── App.jsx
+│       ├── main.jsx
+│       └── index.css
 │
+├── .env
+├── package.json
+├── .gitignore
 └── README.md
 
 ```
 
-## Demo Video (Testing in Postman)
+<img src="./public/video/blogWebsiteImage.png">
 
-watch video (https://drive.google.com/file/d/1Ix-CbRTHdEhdpcaLuTWk3uZOCwnLhKjl/view?usp=sharing)
+## Demo Video 
+
+<a href="https://drive.google.com/file/d/1Ix-CbRTHdEhdpcaLuTWk3uZOCwnLhKjl/view?usp=sharing">
+<img src="blogWebsiteImage.png">
+</a>

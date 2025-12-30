@@ -52,23 +52,25 @@ export const signIn = async (req, res) => {
 // code For Blog CRUD starts...
 
 export const addBlog = async (req, res) => {
-    try {
-        const BlogData = {
-            ...req.body,
-            image_path: req.file ? req.file.filename : null
-        };
+  try {
+    const BlogData = {
+      title: req.body.title,
+      content: req.body.content,
+      image_path: req.file ? req.file.filename : null,
+      author_reference: req.user.name 
+    };
 
-        const newBlog = await BlogModel.create(BlogData);
+    const newBlog = await BlogModel.create(BlogData);
 
-        res.status(201).json({
-            message: "Blog added successfully",
-            blog: newBlog
-        });
-    } catch (error) {
-        console.error("SERVER ERROR:", error);
-        res.status(500).json({ message: "Adding Blog Failed", error: error.message });
-    }
+    res.status(201).json({
+      message: "Blog added successfully",
+      blog: newBlog
+    });
+  } catch (error) {
+    res.status(500).json({ message: "Adding Blog Failed", error: error.message });
+  }
 };
+
 
 export const getBlog = async (req, res) => {
     try {
