@@ -116,10 +116,10 @@ blog-website/
 
 ```
 
-<img src="./public/video/blogWebsiteImage.png">
+## ScreenShot
+
+<img src="blogWebsiteImage.png">
 
 ## Demo Video 
 
-<a href="https://drive.google.com/file/d/1Ix-CbRTHdEhdpcaLuTWk3uZOCwnLhKjl/view?usp=sharing">
-<img src="blogWebsiteImage.png">
-</a>
+Watch Video (https://drive.google.com/file/d/1Ix-CbRTHdEhdpcaLuTWk3uZOCwnLhKjl/view?usp=sharing)
