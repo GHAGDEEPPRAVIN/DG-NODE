@@ -34,8 +34,8 @@ Users can **Sign Up**, **Sign In via OTP**, **create, edit, and delete blogs**, 
 ---
 
 ## 🗂️ Folder Structure
-
-root
+<pre>
+Blog Project (JWT)
 │
 ├─ backend
 │  ├─ config
@@ -71,3 +71,4 @@ root
 │  └─ package.json
 │
 └─ README.md
+</pre>
