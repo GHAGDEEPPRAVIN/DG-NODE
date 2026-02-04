@@ -96,17 +96,14 @@ export const verifyOtpForUserAndSeller = async (req, res) => {
             return res.json({ status: false, message: "Account Not Found !" });
         }
 
+        const role = user ? "user" : "seller";
+        const id = user ? user._id : seller._id;
+
         // after get the user or seller then set the token in jsonwebtoken
-        const token = jwt.sign(
-            {
-                id: user ? user._id : seller._id,
-                email: allData.email,
-                role: user ? "user" : "seller",
-            },
+         const token = jwt.sign(
+            { id, email: allData.email, role },
             SECRET_KEY,
-            {
-                expiresIn: "1d",
-            }
+            { expiresIn: "1d" }
         );
 
         // after setting the token in jsonwebtoken then the token set in cookie
@@ -123,6 +120,7 @@ export const verifyOtpForUserAndSeller = async (req, res) => {
         return res.json({
             status: true,
             message: "OTP is verified & Signin successfully !",
+            role
         });
 
     } catch (error) {

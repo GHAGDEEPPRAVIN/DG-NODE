@@ -6,13 +6,19 @@ import { Routes, Route } from "react-router";
 import SignupRolePage from './frontend/feactures/authentications pages/SignupRolePage';
 import Home from './frontend/components/Home/Home';
 import VerifyOTPforSignin from './frontend/feactures/authentications pages/VerifyOTPforSignin';
+import Navbar from './frontend/components/Navbar/Navbar';
+import Profile from './frontend/components/Profile/Profile';
 
 function App() {
 
   return (
     <div>
-      <Routes>
-        {/* routes for authhentications */}
+      <div style={{height:"30px"}} className='d-flex flex-column justify-content-between align-items-between'>
+        <Navbar />
+      </div>
+      <div style={{backgroundColor:"#F0F5FF"}}>
+        <Routes>
+        {/* routes for authhentications */} 
         <Route path="/" element={<Signin />} />
         <Route path="/choose-role" element={<SignupRolePage />} />
         <Route path="/signup-user" element={<SignupforUser />} />
@@ -21,7 +27,9 @@ function App() {
 
         {/* routes for ui main page */}
         <Route path="/home" element={<Home />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
+      </div>
     </div>
   )
 }
