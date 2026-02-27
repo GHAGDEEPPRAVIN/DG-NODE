@@ -65,6 +65,6 @@ View classroom materials
 - Nodemon
 
   ## Demo Video
-  <a herf="https://drive.google.com/file/d/1Vt3mUqoAS5-U1LDwZ3ZoSu2sZ2eVB03D/view?usp=sharing">
   <img src="classroom.png">
-  </a>
+
+  watch Demo :- https://drive.google.com/file/d/1Vt3mUqoAS5-U1LDwZ3ZoSu2sZ2eVB03D/view?usp=sharing
